@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+*{
+    font-family: 'Edu SA Beginner', cursive;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://fondosmil.com/fondo/455.png);
+  }
+  
+  header {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    
+
+  }
+  
+  .nav {
+    padding: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7HA5Z-7JzMucOXcd2o6lNNW-AsMzPO4JBQCuzRUGO2AsGXLLyU4yg5XpwTltdIZFGegc&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav li {
+    display: inline;
+    transition: .5s ease;
+  }
+  .nav li:hover{
+    background-color: aqua;
+    cursor:pointer
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container div {
+    text-align: justify;
+  }
+  
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+  .contacto img{
+    max-width: 100%;
+    height: 45px;
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      justify-content:center;
+    }
+  
+    .container div {
+      flex-basis: 48%;
+      max-width: 80%;
+    }
+  }
+
+  @media (min-width:480px) {
+    .container {
+      justify-content:center;
+    }
+  
+    .container div {
+      flex-basis: 48%;
+      max-width: 80%;
+    }
+  }
+
+
+
+  
+  
+  
+  
+  
+  
+
+

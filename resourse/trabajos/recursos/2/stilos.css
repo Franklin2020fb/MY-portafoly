@@ -1,0 +1,32 @@
+section{
+    display: flex;
+    width: 600px;
+    height: 450px;
+    margin-left: 900px;
+    margin-top: 150px;
+}
+h2{
+    margin-left: 1100px;
+    margin-top: 50px;
+    color: white;
+}
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQXgfg9F7Uzqe6z1lRiXrvHDPr3MvOKKHtwDF46L2XlJjECivKzW920dS6MdtKrfN9TzA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+
+}
+
+section img:hover {
+    width: 300px;
+    cursor: pointer;
+}
+
+
+

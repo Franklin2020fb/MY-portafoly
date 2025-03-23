@@ -1,0 +1,17 @@
+*{
+    background-color:white;
+}
+
+#logo
+{
+width: 150px;
+height: 150px;
+}
+.boton{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+
+}

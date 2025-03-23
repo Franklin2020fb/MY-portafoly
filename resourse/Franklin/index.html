@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>My portfolio</title>
+<body>
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <a href="#">FRANK JR</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">curriculum</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+
+                </i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="container-banner">
+            <div class="containe-img">
+                <img src="img/hero.png" alt="Hero">
+            </div>
+            <h1>Franklin A. Serrano</h1>
+            <h2>Tecnico automotris</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="sobremi" id="sobremi">
+
+        <div class="container-section">
+
+            <h2>Sobre mí</h2>
+            <p><span>Hola, I am Frank</span> Soy desarrollador web  </p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                        16-02
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3209074295
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            faserrano22@gmil.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Garzón, Huila, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>PROGRAMADOR</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="container-intereses">
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-music"></i>
+                            <span>Música</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Películas</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>Fotografía</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Tecnología</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>Deportes</span>
+                        </div>
+
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>viajar</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV
+                <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+        <!--Section skills-->
+    </section>
+    <section class="skills" id="skills">
+        <div class="container-section">
+            <h2>skills</h2>
+            <div class="fila">
+                <!--tecnical skills-->
+                <div class="col">
+                    <h3>Technical skills</h3>
+
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso photoshop">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso react">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Professional skills-->
+
+                <div class="col">
+                    <h3>Profesional skills</h3>
+
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Proyect Managment</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section curriculum-->
+    <section class="curriculum" id="curriculum">
+        <div class="container-section">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>educación</h3>
+
+                    
+                    <div class="item izq">
+                        <h4>Arte y multimedia</h4>
+                        <span class="casa">universidad de oxford</span>
+                        <span class="fecha">2010 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>    
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Arte y multimedia</h4>
+                        <span class="casa">universidad de oxford</span>
+                        <span class="fecha">2010 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item izq">
+                        <h4>Arte y multimedia</h4>
+                        <span class="casa">universidad de oxford</span>
+                        <span class="fecha">2010 2015</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--COlumnma derecha-->
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+   
+                    <div class="item der">
+                        <h4>Front end developer</h4>
+                        <span class="casa">Nombre compañia</span>
+                        <span class="fecha">2010 2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+
+                    <div class="item der">
+                        <h4>Frontend Developer</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2010 2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>   
+                    </div>
+
+                    <div class="item der">
+                        <h4>Frontend Developer</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2010 2014</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section portfolio-->
+    
+    <section id="portafolio" class="portafolio" >
+        <div class="container-section">
+            <h2>portafolio</h2>
+            <div class="galeria">
+
+                <div class="proyecto">
+                    <img src="img/p1.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p5.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="#">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--section contacto-->
+
+    <section id="contacto" class="contacto">
+        <div class="container-section">
+            <h2>contacto</h2>
+            <div class="fila">
+
+                <!--formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <!--aqui esta mal el tipo, es numero-->
+                    <input type="email" placeholder="Numero telefonico">
+                    <input type="text" placeholder="dirección de correo">
+                    <input type="text" placeholder="tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="tu mensaje"></textarea>
+                    <button> Enviar <i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+                </div>
+                <!--mapa-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i>Garzón, Huila, Colombia</li>
+                            <li><i class="fa-solid fa-mobile-screen"></i>Call me ;) 31327813</li>
+                            <li><i class="fa-solid fa-envelope"></i>E-mail: estegmaoia.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-sharp fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>photoshop
