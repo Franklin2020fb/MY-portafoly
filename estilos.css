@@ -12,50 +12,72 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('https://i.scdn.co/image/ab67616d0000b27393887ef8f439fa54d51e7991'); /* Ruta de la imagen de fondo */
-    background-size: cover; /* Cubre toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que se repita */
-    background-attachment: fixed; /* Fija la imagen al desplazarse */
+    background: url('https://i.scdn.co/image/ab67616d0000b27393887ef8f439fa54d51e7991') center/cover no-repeat fixed;
 }
 
-/* Estilos para el menú desplegable */
+/* Estilo para el botón del menú */
+.btn-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Menú desplegable */
 .container-menu {
     position: fixed;
     top: 0;
-    left: -100%; /* Oculta el menú fuera de la pantalla */
+    left: -100%;
     width: 80%;
     max-width: 300px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro semi-transparente */
-    backdrop-filter: blur(10px); /* Efecto de desenfoque */
-    transition: left 0.3s ease; /* Animación suave al abrir/cerrar */
+    background: url('https://i.ebayimg.com/00/s/MTYwMFgxMjgw/z/4iUAAOSwIExjxeY9/$_57.JPG?set_id=880000500F') center/cover no-repeat;
+    transition: left 0.3s ease-in-out;
     z-index: 1000;
     overflow-y: auto;
-    margin: 0; /* Elimina márgenes predeterminados */
-    padding: 0; /* Elimina paddings predeterminados */
-    border: none; /* Elimina bordes predeterminados */
-    box-shadow: none; /* Elimina sombras predeterminadas */
+}
+
+.container-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
 }
 
 /* Mostrar el menú cuando el checkbox está activo */
 #btn-menu:checked ~ .container-menu {
-    left: 0; /* Muestra el menú */
+    left: 0;
 }
 
-/* Estilos para el contenido del menú */
+/* Contenido del menú */
 .cont-menu {
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0; /* Elimina márgenes predeterminados */
 }
 
 .cont-menu ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Elimina márgenes predeterminados */
     width: 100%;
 }
 
@@ -71,14 +93,13 @@ body {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    background-color: transparent; /* Fondo transparente para los enlaces */
 }
 
 .cont-menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Fondo claro al pasar el mouse */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Estilos para el botón de cerrar */
+/* Botón de cerrar */
 .cont-menu label {
     position: absolute;
     top: 20px;
@@ -87,24 +108,64 @@ body {
     font-size: 24px;
     cursor: pointer;
     transition: color 0.3s ease;
-    background-color: transparent; /* Fondo transparente para el botón de cerrar */
-    border: none; /* Elimina bordes predeterminados */
 }
 
 .cont-menu label:hover {
-    color: #ffc0cb; /* Cambia el color al pasar el mouse */
+    color: #ffc0cb;
 }
 
 /* Ocultar el checkbox */
 #btn-menu {
-    display: none; /* Oculta el checkbox */
+    display: none;
 }
+
+/* Contenido principal */
 .main-content {
-    flex: 120; /* Ocupa el espacio restante */
-    padding: 20px; /* Espaciado interno */
-    background-color: rgba(255, 255, 255, 0); /* Fondo semi-transparente */
-    margin: 20px; /* Espaciado externo */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(250, 245, 245, 0.91); /* Sombra suave */
-    color: #fcf5f5; /* Color del texto */
+    flex: 1;
+    padding: 40px;
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    color: #fcf5f5;
+}
+
+.main-content h2 {
+    font-size: 60px;
+}
+
+.main-content p {
+    font-size: 30px;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Imagen de perfil */
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Nombre del perfil */
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
 }
